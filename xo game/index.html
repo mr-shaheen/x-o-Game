@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./new.css">
+</head>
+<body>
+    
+    <div class="mainbox">
+        <h1>X O Game</h1>
+        <div class="box1">
+            <button onclick="change1(temp),change11()" id="btn1"></button> 
+            <button onclick="change2(temp),change11()" id="btn2"></button>
+            <button onclick="change3(temp),change11()" id="btn3"></button><br>
+            <button onclick="change4(temp),change11()" id="btn4"></button>
+            <button onclick="change5(temp),change11()" id="btn5"></button>
+            <button onclick="change6(temp),change11()" id="btn6"></button><br>
+            <button onclick="change7(temp),change11()" id="btn7"></button>
+            <button onclick="change8(temp),change11()" id="btn8"></button>
+            <button onclick="change9(temp),change11()" id="btn9"></button>
+        </div>
+        <p class="x" id="x">x won the Game</p>
+        <p class="o" id="o">o won the Game</p>
+    </div>
+    
+
+<script>
+
+var a,b,c,d,e,f,g,h,i;
+var temp =0;
+    
+function change1(z)
+{
+     temp=temp+1;
+     console.log(temp);
+     if(temp%2==1){
+          a=document.getElementById("btn1").innerHTML="x";
+          document.getElementById("btn1").disabled=true
+          
+     }
+     else{
+          a=document.getElementById("btn1").innerHTML="o";
+          document.getElementById("btn1").disabled=true
+     } 
+
+}
+function change2(z)
+{
+     temp=temp+1;
+     console.log(temp);
+     if(temp%2==1){
+          b=document.getElementById("btn2").innerHTML="x";
+          document.getElementById("btn2").disabled=true
+     }
+     else{
+          b=document.getElementById("btn2").innerHTML="o";
+          document.getElementById("btn2").disabled=true
+     } 
+
+}
+function change3(z)
+{
+     temp=temp+1;
+     console.log(temp);
+     if(temp%2==1){
+          c=document.getElementById("btn3").innerHTML="x";
+          document.getElementById("btn3").disabled=true
+     }
+     else{
+          c=document.getElementById("btn3").innerHTML="o";
+          document.getElementById("btn3").disabled=true
+     } 
+
+}
+function change4(z)
+{
+     temp=temp+1;
+     console.log(temp);
+     if(temp%2==1){
+          d=document.getElementById("btn4").innerHTML="x";
+          document.getElementById("btn4").disabled=true
+     }
+     else{
+          d=document.getElementById("btn4").innerHTML="o";
+          document.getElementById("btn4").disabled=true
+     } 
+
+}
+function change5(z)
+{
+     temp=temp+1;
+     console.log(temp);
+     if(temp%2==1){
+          e=document.getElementById("btn5").innerHTML="x";
+          document.getElementById("btn5").disabled=true
+     }
+     else{
+          e=document.getElementById("btn5").innerHTML="o";
+          document.getElementById("btn5").disabled=true
+     } 
+
+}
+function change6(z)
+{
+     temp=temp+1;
+     console.log(temp);
+     if(temp%2==1){
+          f=document.getElementById("btn6").innerHTML="x";
+          document.getElementById("btn6").disabled=true
+     }
+     else{
+          f=document.getElementById("btn6").innerHTML="o";
+          document.getElementById("btn6").disabled=true
+     } 
+
+}
+function change7(z)
+{
+     temp=temp+1;
+     console.log(temp);
+     if(temp%2==1){
+          g=document.getElementById("btn7").innerHTML="x";
+          document.getElementById("btn7").disabled=true
+     }
+     else{
+          g=document.getElementById("btn7").innerHTML="o";
+          document.getElementById("btn7").disabled=true
+     } 
+;
+}
+function change8(z)
+{
+     temp=temp+1;
+     console.log(temp);
+     if(temp%2==1){
+          h=document.getElementById("btn8").innerHTML="x";
+          document.getElementById("btn8").disabled=true
+     }
+     else{
+          h=document.getElementById("btn8").innerHTML="o";
+          document.getElementById("btn8").disabled=true
+     } 
+
+}
+function change9(z)
+{
+     temp=temp+1;
+     console.log(temp);
+     if(temp%2==1){
+          i=document.getElementById("btn9").innerHTML="x";
+          document.getElementById("btn9").disabled=true
+     }
+     else{
+          i=document.getElementById("btn9").innerHTML="o";
+          document.getElementById("btn9").disabled=true
+     } 
+
+}
+
+
+// function for three numbers equal bellow
+function change11(){
+if(a == "x" &&  b =="x" && c =="x"){
+    document.getElementById("x").style.display="block"
+}
+else if(a=="o" && b=="o" && c=="o"){
+    document.getElementById("o").style.display="block"
+}
+if(d == "x" &&  e =="x" && f =="x"){
+    document.getElementById("x").style.display="block"
+}
+else if(d =="o" && e=="o" && f=="o"){
+    document.getElementById("o").style.display="block"
+}
+if(g == "x" &&  h =="x" && i =="x"){
+    document.getElementById("x").style.display="block"
+}
+else if(g =="o" && h=="o" && i=="o"){
+    document.getElementById("o").style.display="block"
+}
+if(a == "x" &&  d =="x" && g =="x"){
+    document.getElementById("x").style.display="block"
+}
+else if(a =="o" && d=="o" && g=="o"){
+    document.getElementById("o").style.display="block"
+}
+if(b == "x" &&  e =="x" && h =="x"){
+    document.getElementById("x").style.display="block"
+}
+else if(b =="o" && e=="o" && h=="o"){
+    document.getElementById("o").style.display="block"
+}
+if(c == "x" &&  f =="x" && i =="x"){
+    document.getElementById("x").style.display="block"
+}
+else if(c =="o" && f=="o" && i=="o"){
+    document.getElementById("o").style.display="block"
+}
+if(a == "x" &&  e =="x" && i =="x"){
+    document.getElementById("x").style.display="block"
+}
+else if(a =="o" && e=="o" && i=="o"){
+    document.getElementById("o").style.display="block"
+}
+if(c == "x" &&  e =="x" && g =="x"){
+    document.getElementById("x").style.display="block"
+}
+else if(c =="o" && e=="o" && g=="o"){
+    document.getElementById("o").style.display="block"
+}
+}
+
+
+
+</script>
+
+</body>
+</html>
